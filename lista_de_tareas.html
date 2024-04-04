@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lista de tareas</title>
+</head>
+<body>
+     <input type="text" id="tarea">
+
+     <button onclick="agregar ()"> agregar tarea</button>
+
+     <ul id="lista"></ul>
+
+     <script>
+
+        function agregar(){
+            let entrada= document.getElementById("tarea");
+            let elementolista= document.getElementById("lista");
+            let espacio= Entrada.value.trim();
+
+            if (Espacio!==""){
+
+                let Nodoli=document.createElement("li");
+                Nodoli.textContent=Espacio
+
+                let borrar=document.createElement("button");
+                borrar.textContent="eliminar"
+                borrar.onclick=function() {
+                elementolista.removechild(li);
+            }
+
+        li.appenchild(borrar);
+        lista.appenchild(li);
+        entrada.value="";
+        
+
+        }else{
+            alert("ingrese una tarea");  
+        }
+
+        }
+     </script>
+</body>
+</html>
